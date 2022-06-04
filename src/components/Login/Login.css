@@ -1,0 +1,30 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.login > h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.login > img {
+  /* width: 100%; */
+}
+
+.login > a {
+  padding: 20px;
+  border-radius: 99px;
+  background-color: var(--spotify-green);
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 830px) {
+  .login > img {
+    width: 100%;
+  }
+}

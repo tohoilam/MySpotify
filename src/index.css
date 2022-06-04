@@ -1,3 +1,7 @@
+:root {
+  --spotify-green: #1db954;
+}
+
 * {
   margin: 0;
 }
