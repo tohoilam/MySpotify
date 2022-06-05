@@ -6,11 +6,11 @@
 const endpoint = 'https://accounts.spotify.com/authorize'
 const client_id = 'e82f109675b04e228333c6d0509b44c1';
 const response_type = 'token';
-// const redirect_uri = 'http://localhost:3000/';
 const redirect_uri = "https://myspotify-43556.web.app/";
+// const redirect_uri = 'http://localhost:3000/';
+
 // const PORT = process.env.PORT || '8080';
 // const redirect_uri = 'http://localhost:' + PORT + '/';
-// const redirect_uri = 'https://my-spotify-tohoilam.herokuapp.com/';
 
 const scope = [
   "user-read-private",
