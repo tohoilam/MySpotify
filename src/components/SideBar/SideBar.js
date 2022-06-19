@@ -3,16 +3,20 @@ import './SideBar.css';
 
 export default class SideBar extends React.Component {
 
+  switchScreen(selectedScreen) {
+    this.props.setState({selectedScreen: selectedScreen});
+  }
+
   render() {
     return (
       <nav id="SideBar">
         <div id="sideBarLogo" className="sideBarItem">
           <p>Logo</p>
         </div>
-        <div className="sideBarItem sideBarNavItem">
+        <div className="sideBarItem sideBarNavItem" onClick={() => { this.switchScreen("MySpotify") }}>
           <p>My Spotify</p>
         </div>
-        <div className="sideBarItem sideBarNavItem">
+        <div className="sideBarItem sideBarNavItem" onClick={() => { this.switchScreen("Statistics") }}>
           <p>Statistics</p>
         </div>
       </nav>

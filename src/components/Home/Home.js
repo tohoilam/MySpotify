@@ -2,6 +2,7 @@ import React from 'react';
 import SideBar from '../SideBar/SideBar';
 import PlayBar from '../PlayBar/PlayBar';
 import MySpotify from '../MySpotify/MySpotify';
+import Statistics from '../Statistics/Statistics';
 import './Home.css';
 
 export default class Home extends React.Component {
@@ -34,18 +35,21 @@ export default class Home extends React.Component {
     if (this.state.selectedScreen === "MySpotify") {
       return <MySpotify />
     }
+    else if (this.state.selectedScreen === "Statistics") {
+      return <Statistics />
+    }
   }
 
   render() {
     if (!this.state.isLoaded) {
       return (
-        <div id="loading fontFamily">Loading...</div>
+        <div>Loading...</div>
       )
     }
 
     return ( 
       <div id="WebPage">
-        <SideBar />
+        <SideBar  setState={state => this.setState(state)} />
         <main id="MainContent">
           { this.mainContent() }
         </main>

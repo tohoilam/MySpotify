@@ -17,7 +17,7 @@ export default class App extends React.Component {
   }
 
   // Mount after collecting the token
-  componentWillMount() {
+  componentDidMount() {
     const response = getTokenFromUrl()
     window.location.hash = ""; // Hide token in url bar
     const _token = response.access_token;
