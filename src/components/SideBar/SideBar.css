@@ -1,0 +1,19 @@
+#SideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--black);
+}
+
+.sideBarItem {
+  border-bottom: 1px solid white;
+  
+}
+
+.sideBarNavItem {
+  height: 50px;
+}
+
+#sideBarLogo {
+  height: 100px;
+}
