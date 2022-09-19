@@ -2,29 +2,33 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 4.5fr;
-  grid-template-rows: 6fr 1fr;
+  grid-template-rows: minmax(0, 1fr) 90px;
   grid-template-areas: "SideBar MainContent"
                        "PlayBar PlayBar";
 }
 
 #SideBar {
   grid-area: SideBar;
+  position: relative;
 }
 
 #PlayBar {
   grid-area: PlayBar;
+  position: relative;
 }
 
 #MainContent {
   grid-area: MainContent;
   background-color: var(--dark-black);
+  position: relative;
+  overflow: auto;
 }
 
 /* Mobile Style */
 @media only screen and (max-width: 400px) {
   #WebPage {
     grid-template-columns: 1fr;
-    grid-template-rows: 8fr 1fr 1fr;
+    grid-template-rows: minmax(0, 1fr) 90px 90px;
     grid-template-areas: "MainContent"
                          "PlayBar"
                          "SideBar";

@@ -1,3 +1,109 @@
 #PlayBar {
   background-color: var(--light-black);
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+#currentlyPlayingImage {
+  position: relative;
+}
+
+#currentlyPlayingImage {
+  float: left;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  object-fit: cover;
+  background-position: center center;
+}
+
+#currentlyPlayingImage > img {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+#currentlyPlaying > h3{
+  font-size: 14px;
+  padding-top: 25px;
+  color: white;
+}
+
+#currentlyPlaying > h4 {
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+#playControl {
+  margin-top: 10px;
+}
+
+#playControlBox {
+  width: 60%;
+  height: 40px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.playControlIcon {
+  text-align: center;
+  margin-top: 11px;
+}
+
+#playButton {
+  height: 40px;
+  margin-top: 2px;
+}
+
+#playButton:hover {
+  margin-top: 0px;
+  font-size: 40px;
+}
+
+
+#progressBarBox {
+  width: 100%;
+  margin-top: 1px;
+}
+
+.sliderContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  /* margin: auto; */
+  /* display: block; */
+  width: 100%;
+  height: 5px;
+  border-radius: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 5px;
+  border-radius: 25px;
+  opacity: 1;
+  background: rgb(29, 137, 84);
+  border: none;
+}
+
+.slider::-moz-range-thumb {
+  width: 100px; /* Set a specific slider handle width */
+  height: 5px; /* Slider handle height */
+  background: rgb(29, 137, 84); /* Green background */
 }

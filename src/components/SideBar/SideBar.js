@@ -13,10 +13,10 @@ export default class SideBar extends React.Component {
         <div id="sideBarLogo" className="sideBarItem">
           <p>Logo</p>
         </div>
-        <div className="sideBarItem sideBarNavItem" onClick={() => { this.switchScreen("MySpotify") }}>
+        <div className="sideBarItem sideBarNavItem hoverCursor" onClick={() => { this.switchScreen("MySpotify") }}>
           <p>My Spotify</p>
         </div>
-        <div className="sideBarItem sideBarNavItem" onClick={() => { this.switchScreen("Statistics") }}>
+        <div className="sideBarItem sideBarNavItem hoverCursor" onClick={() => { this.switchScreen("Statistics") }}>
           <p>Statistics</p>
         </div>
       </nav>

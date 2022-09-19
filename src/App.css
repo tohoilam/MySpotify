@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
 :root {
   --spotify-green: #1db954;
 
   --black: rgb(0, 0, 0);
   --dark-black: rgb(18, 18, 18);
   --light-black: rgb(24, 24, 24);
+
+  --dark-grey: rgb(40, 40, 40);
+  --grey: rgb(48, 48, 48);
+  --light-grey: rgb(87, 87, 87);
   
   --white: white;
 
@@ -11,9 +17,82 @@
 
 * {
   color: var(--white);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Mukta', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: var(--light-grey) transparent;
+  scrollbar-width: thin;
 }
+
+*::-webkit-scrollbar {
+  width: 22px;
+  background: transparent;
+  z-index: 999;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--light-grey);
+  border-radius: 22px;
+  border: 8px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  z-index: 999;
+}
+
+.hoverCursor:hover {
+  cursor: pointer;
+}
+
+.textOverflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v92/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* Color for background */
+.material-icons.md-green { color: rgba(29, 137, 84, 1); }
