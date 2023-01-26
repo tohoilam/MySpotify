@@ -1,0 +1,110 @@
+#ViewTracks {
+  display: unset;
+  overflow: auto;
+  width: 100%;
+}
+
+#playlistHeaderSection {
+  height: 260px;
+  width: 100%;
+}
+
+.playlistHeaderItem {
+  margin: 30px;
+  float: left;
+}
+
+#playlistHeaderSection > #playlistImage {
+  height: 200px;
+  width: 200px;
+  margin-left: 80px;
+}
+
+#playlistHeaderSection > #playlistImage > img {
+  height: 200px;
+  width: 200px;
+  background-position: center center;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#playlistHeaderSection > #playlistInfo {
+  margin-left: 10px;
+  padding-top: 60px;
+}
+
+#playlistHeaderSection > #playlistInfo > h1.playlistInfoItem {
+  padding: 8px 0px;
+}
+
+#playlistHeaderSection > #playlistInfo > h5.playlistInfoItem {
+  padding: 3px 0px;
+}
+
+#playlistSmallHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0px 5px 30px;
+  background-color: rgba(25, 25, 25, 0.943);
+  transition: visibility 0.5s linear, opacity 0.5s linear;
+}
+
+.smallHeaderVisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#playlistTracksSection {
+  padding: 0px 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#playlistTracksSection > .track {
+  display: flex;
+  width: 100%;
+  height: 22px;
+  font-size: 10pt;
+  border-top: 1px solid var(--grey);
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#playlistTracksSection > .track:hover {
+  background-color: var(--grey);
+}
+
+.playTrackButton {
+  width: 5%;
+  text-align: center;
+}
+
+.trackName {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.trackArtist {
+  width: 20%;
+  margin-right: 10px;
+}
+
+.trackAlbum {
+  width: 10%;
+  margin-right: 10px;
+}
+
+.trackAddedDate {
+  width: 10%;
+  margin-right: 10px;
+}
+
+.trackDuration {
+  width: 10%;
+}
+
+.trackItems {
+  display: inline-block;
+}
+

@@ -1,0 +1,44 @@
+#MySpotify {
+  /* display: flex;
+  flex-direction: column; */
+  position: absolute;
+  /* overflow: auto; */
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  /* height: auto; */
+}
+
+#userInfoSection {
+  /* flex: 4 4; */
+  height: 200px;
+  /* position: absolute; */
+}
+
+#tabBar {
+  /* flex: 1 1; */
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  /* position: absolute; */
+  top: 200px;
+}
+
+#smallInfoSection {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+  height: 35px;
+  padding: 10px 0px 0px 10px;
+  background: linear-gradient(180deg, var(--dark-black) 0%, rgba(18,18,18,0.2) 100%, rgba(0,0,0,0) 100%);
+}
+
+
+
+#mySpotifyTab {
+  /* flex: 6 6; */
+  /* height: auto; */
+  /* top: 300px; */
+  /* position: relative; */
+}

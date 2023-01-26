@@ -74,6 +74,10 @@ SpotifyApi.prototype = {
     return {};
   },
 
+  getSpecificTrack: async function(trackID) {
+    return await this.request('GET', '/v1/tracks/' + trackID);
+  },
+
   getRecentlyPlayed: async function() {
     return await this.request('GET', '/v1/me/player/recently-played');
   },
